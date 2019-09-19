@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TETRIS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        canvas {
+            display: block;
+            margin: auto;
+            border: 1px black solid;
+        }
+
+        #score {
+            display: inline-block;
+        }
+
+        div {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Pontuação :
+        <div id="score">0</div>
+    </div>
+    <br>
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <script src="tetrominoes.js"></script>
+    <script src="tetris.js"></script>
+    <b>
+        <p> CONTROLES ಠ_ಠ</p>
+    </b>
+    <p> ↑ seta para cima gira a peça</p>
+    <p> ↓ seta para para baixo faz a peça descer mais rapido</p>
+    <p> → seta para direita move a peça para direita</p>
+    <p> ← seta para esquerda move a peça para esquerda</p>
+
+    
+</body>
+
+</html>
