@@ -2,10 +2,11 @@ const cvs = document.getElementById("tetris");
 const ctx = cvs.getContext("2d");
 const scoreElement = document.getElementById("score");
 
+
 const ROW = 20;
 const COL = COLUMN = 10;
 const SQ = squareSize = 20;
-const VACANT = "BLACK";
+const VACANT = "#272821";
 
 //DESENHO O QUADRADO
 function drawSquadre(x, y, color) {
@@ -146,6 +147,7 @@ Piece.prototype.rotate = function () {
 }
 
 let score = 0;
+
 
 Piece.prototype.lock = function () {
     for (r = 0; r < this.activeTetromino.length; r++) {
